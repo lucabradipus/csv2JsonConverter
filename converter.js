@@ -6,12 +6,12 @@ const EventEmitter = require('events');
 class Converter extends EventEmitter {
   constructor() {
     super();
-    this.on('start', (csvFile) => {
-      this.convert(csvFile);
+    this.on('start', (csvFile, jsonFilename='customer-data.json') => {
+      this.convert(csvFile, jsonFilename);
     });
   }
 
-  convert(csvFile) {
+  convert(csvFile, jsonFilename) {
     const converter = csv({toArrayString: true});
     let jBuff = '';
     converter
@@ -25,7 +25,7 @@ class Converter extends EventEmitter {
       })
       .on('end', () => {
         const dir = path.dirname(csvFile);
-        fs.writeFileSync(path.join(dir, 'customer-data.json'), jBuff);
+        fs.writeFileSync(path.join(dir, jsonFilename), jBuff);
         console.log('done');
         this.emit('completed', null, 'Completed');
       });
