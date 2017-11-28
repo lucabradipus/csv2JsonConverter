@@ -1,6 +1,14 @@
 # csv2JsonConverter
 Module 1 assignment lab in edX introduction to NodeJS 
 
+**Installation**
+
+  * Clone the repository
+  * install the module with *npm i*
+  * test with *node test.js*
+  * run with *node customer-data-converter.js*
+  
+  
 **Some explanation on my code**
 
 *converter.js*:
