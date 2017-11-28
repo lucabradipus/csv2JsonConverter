@@ -1,0 +1,26 @@
+{
+  "name": "csv2JsonConverter",
+  "version": "1.0.0",
+  "description": "Module 1 assignment lab in edX introduction to NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucabradipus/csv2JsonConverter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucabradipus/csv2JsonConverter/issues"
+  },
+  "homepage": "https://github.com/lucabradipus/csv2JsonConverter#readme",
+  "dependencies": {
+    "basename": "0.1.2",
+    "csvtojson": "1.1.9",
+    "dirname": "0.1.0",
+    "uuid": "3.1.0"
+  }
+}
