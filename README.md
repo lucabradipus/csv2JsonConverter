@@ -59,3 +59,9 @@ two converter are working together, even if I am using fs.writeFileSync.
 
 I choose to pretend that the csv files was already  downloaded "before" I begin to convert it. 
 Specifications seemed to me ( a not native English speaker) not completely clear in this sense. 
+
+## UPDATE (30/11/2017)
+looking at the solution proposed by  banngass I updated two methods call to obtain 
+a "formatted" json. The changed lines are marked in converted.js and are marked as 
+"BY BANGASS". the json file has the same content, but the lines are now formatted to 
+allow a simple diff with the json provided as solution. I
